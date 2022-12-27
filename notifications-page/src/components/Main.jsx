@@ -1,6 +1,7 @@
 import React from "react";
 import "./Main.css";
 import Notification from "./Notification";
+import notifications from "../utils/parseNotifications";
 
 const Main = () => {
   return (
@@ -12,10 +13,14 @@ const Main = () => {
         </div>
 
         <div className="notification-cont">
+          {notifications.map((item, key) => (
+            <Notification avatarPath={item.info.avatarPath} fullName={item.info.fullName} post={item.info.post}
+             action={item.info.action} time={item.info.time} key={key}/>
+          ))}
+          {/* <Notification />
           <Notification/>
           <Notification/>
-          <Notification/>
-          <Notification/>
+          <Notification/> */}
         </div>
       </div>
     </div>

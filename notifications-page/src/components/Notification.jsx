@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Notification.css";
 
-const Notification = () => {
+const Notification = ({avatarPath, fullName, action, post, time}) => {
+  const [isRead, setIsRead] = useState(false);
+  const toggleChecked = () => setIsRead((value) => !value);
   return (
-    <div className="noti-container">
+    <div
+      className={isRead ? "noti-container read" : "noti-container"}
+      onClick={toggleChecked}
+    >
       {/* hello */}
 
       {/* avatar */}
@@ -11,9 +16,12 @@ const Notification = () => {
       {/* name and infomation --- Mark Webber reacted to your recent post My first tournament today!*/}
       <div className="noti-text">
         <div className="noti-description">
-          <div> Mark Webber </div>
+          <div className="user-fullname"> Mark Webber </div>
           <div>reacted to your recent post</div>
-          <div>My first tournament today!</div>
+          <div className="user-post">
+            My first tournament today!{" "}
+            <span className={isRead ? "remove-dot" : "unread-dot"}> ● </span>{" "}
+          </div>
         </div>
         {/* time posted */}
         <div className="noti-time">1m ago</div>
