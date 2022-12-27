@@ -1,0 +1,16 @@
+[
+  {
+    "metadata":{
+        "isUnRead": true,
+        "isExtended": false,
+        "id":1
+    },
+    "info": {
+      "avatarPath": "/avatars/avatar-mark-webber.webp",
+      "fullName": "Mark Webber",
+      "action": "reacted to your recent post",
+      "post": "My first tournament today!",
+      "time": "1m ago"
+    }
+  }
+]
