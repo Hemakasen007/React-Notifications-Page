@@ -15,7 +15,7 @@ const Main = () => {
         <div className="notification-cont">
           {notifications.map((item, key) => (
             <Notification avatarPath={item.info.avatarPath} fullName={item.info.fullName} post={item.info.post}
-             action={item.info.action} time={item.info.time} key={key}/>
+             action={item.info.action} time={item.info.time} key={key} extension={item.metadata.isExtended}/>
           ))}
           {/* <Notification />
           <Notification/>

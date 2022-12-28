@@ -12,5 +12,47 @@
       "post": "My first tournament today!",
       "time": "1m ago"
     }
+  },
+  {
+    "metadata":{
+        "isUnRead": true,
+        "isExtended": false,
+        "id":1
+    },
+    "info": {
+      "avatarPath": "/avatars/avatar-angela-gray.webp",
+      "fullName": "Angela Gray",
+      "action": "followed you",
+      "post": "",
+      "time": "5m ago"
+    }
+  },
+  {
+    "metadata":{
+        "isUnRead": true,
+        "isExtended": false,
+        "id":1
+    },
+    "info": {
+      "avatarPath": "/avatars/avatar-jacob-thompson.webp",
+      "fullName": "Jacob Thompson",
+      "action": "has joined your group",
+      "post": "The Chess Club",
+      "time": "1 day ago"
+    }
+  },
+  {
+    "metadata":{
+        "isUnRead": true,
+        "isExtended": true,
+        "id":1
+    },
+    "info": {
+      "avatarPath": "/avatars/avatar-rizky-hasanuddin.webp",
+      "fullName": "Rizky Hasanuddin",
+      "action": "has sent you a private message",
+      "post": "",
+      "time": "5 days ago"
+    }
   }
 ]

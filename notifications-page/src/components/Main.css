@@ -10,6 +10,8 @@
 
 }
 
+
+
 .sub-cont{
     width: 60%;
     margin-top: 5%;
@@ -18,7 +20,20 @@
     background-color: hsl(0, 0%, 100%);
     display: flex;
     flex-direction: column;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
 }
+
+@media only screen and (max-width: 390px) {
+    .sub-cont{
+        width: 100%;
+        margin-top: 0%;
+        border-radius: 0px;
+        height: fit-content;
+    }
+}
+
+
 
 .sub-container-header{
     display: flex;

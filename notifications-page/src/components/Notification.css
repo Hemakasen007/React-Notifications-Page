@@ -6,7 +6,10 @@
     background-color: hsl(211, 68%, 94%);
     padding: 10px;
     border-radius: 10px;
+    margin-bottom: 10px;
 }
+
+
 
 .read{
     background-color: hsl(210, 60%, 98%);
@@ -62,4 +65,20 @@
 
 .unread-dot{
     color: hsl(14, 63%, 50%);
+}
+
+.private-message{
+    padding: 5px;
+    width: 90%;
+    font-size: 15px;
+    margin-top: 10px;
+    border: 1px solid;
+}
+
+
+@media only screen and (max-width: 390px) {
+    .noti-description{
+        display: inline;
+        /* padding: 5px; */
+    }
 }
